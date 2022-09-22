@@ -1,6 +1,6 @@
 import { Text, StyleSheet, View, FlatList, ActivityIndicator, Image, TextInput, Pressable } from 'react-native'
 import React, { useState, useEffect } from "react";
-// import Icon from 'react-native-vector-icons/Ionicons'
+import Icon from 'react-native-vector-icons/Ionicons'
 
 export default function QuizChoose({ navigation }) {
 	const [isLoading, setLoading] = useState(true);
@@ -30,7 +30,7 @@ export default function QuizChoose({ navigation }) {
 				<View style={styles.textContainer}>
 					<Text style={styles.QuizListItemText}>{item.title}</Text>
 					<Text style={styles.QuizListItemText}>
-						{/* <Icon name="flame-sharp" size={24} color="#f84" /> */}
+						<Icon name="flame-sharp" size={24} color="#f84" />
 					</Text>
 				</View>
 			</Pressable>

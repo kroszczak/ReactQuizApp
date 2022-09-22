@@ -2,8 +2,8 @@ import { StyleSheet, Text, View, FlatList, Image, Pressable, Animated } from 're
 import { NavigationContainer, getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React, { useRef, useState } from 'react'
-// import IconIon from 'react-native-vector-icons/Ionicons'
-// import Entypo from 'react-native-vector-icons/Entypo'
+import IconIon from 'react-native-vector-icons/Ionicons'
+import Entypo from 'react-native-vector-icons/Entypo'
 
 import OgniskaDetalis from './OgniskaDetalis';
 
@@ -159,9 +159,9 @@ const Ogniska = () => {
 					tabBarIcon: ({ focused, color, size }) => {
 
 						if (route.name === 'Ogniska') {
-							// return <IconIon name={'bonfire'} size={size} color={color} />;
+							return <IconIon name={'bonfire'} size={size} color={color} />;
 						} else if (route.name === 'Technika') {
-							// return <Entypo name={'tools'} size={size} color={color} />
+							return <Entypo name={'tools'} size={size} color={color} />
 
 
 						}

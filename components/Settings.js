@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Switch } from 'react-native'
 import React, { useState } from 'react'
-// import IconEntypo from 'react-native-vector-icons/Entypo'
+import IconEntypo from 'react-native-vector-icons/Entypo'
 
 const Settings = () => {
 

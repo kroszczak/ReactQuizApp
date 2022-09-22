@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View, Pressable } from 'react-native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-// import Icon from 'react-native-vector-icons/FontAwesome5'
+import Icon from 'react-native-vector-icons/FontAwesome5'
 import StopnieDetails from './StopnieDetails';
 
 const StopnieStack = () => {
@@ -96,14 +96,14 @@ const Stopnie = ({ route, navigation }) => {
 					return (
 						<Pressable style={styles.item} onPress={() => { navigation.navigate('Details', { data: e }) }}>
 							<View style={styles.icon}>
-								{/* {e.icon.map((i) => <Icon name={i} size={e.icon_size} color='#555' style={styles.icon}></Icon>)} */}
+								{e.icon.map((i) => <Icon name={i} size={e.icon_size} color='#555' style={styles.icon}></Icon>)}
 							</View>
 							<View>
 								<Text style={styles.itemText}>{e.mname}</Text>
 								<Text style={styles.itemText}>{e.fname}</Text>
 							</View>
 
-							{/* <Icon name='angle-right' size={20} color="#888" style={{ position: 'absolute', right: 20 }} /> */}
+							<Icon name='angle-right' size={20} color="#888" style={{ position: 'absolute', right: 20 }} />
 
 						</Pressable>
 					)
