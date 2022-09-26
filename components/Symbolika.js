@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, FlatList, Image, Pressable, ScrollView } from 'react-native'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 
 data = [
 	{
@@ -13,11 +13,21 @@ data = [
 	},
 	{
 		name: "lilijka harcerska",
-		img: require('../img/symbolika/lilijka.png')
+		img: require('../img/symbolika/lilijka.png'),
+		elements: {
+			liljka: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
+			piasek: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.',
+			ramiona: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
+		}
 	},
 	{
 		name: "Koniczynka WAGGGS",
-		img: require('../img/symbolika/koniczynka.png')
+		img: require('../img/symbolika/koniczynka.png'),
+		elements: {
+			liljka: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
+			piasek: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.',
+			ramiona: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
+		}
 	},
 	{
 		name: "WOSM",
@@ -38,13 +48,20 @@ data = [
 ]
 
 const Symbolika = () => {
-	const [clicked, setClicked] = useState(null)
+	const [clicked, setClicked] = useState(null);
+	const scrollRef = useRef();
 
 	const handlePress = (index) => {
-		setClicked(data[index])
+		setClicked(data[index]);
+		scrollRef.current?.scrollTo({
+			y: 0,
+			animated: true,
+		});
+		console.log('done')
 	}
 	const renderContent = () => {
 		return <ScrollView
+			ref={scrollRef}
 			style={{ width: '100%' }}
 			contentContainerStyle={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
 			showsVerticalScrollIndicator={false}>
@@ -69,13 +86,14 @@ const Symbolika = () => {
 			<View>
 				<FlatList
 					horizontal
+					// pagingEnabled
 					showsHorizontalScrollIndicator={false}
-					style={{ borderBottomColor: '#f0f0f0', borderBottomWidth: 1, marginTop: 25 }}
+					style={{ borderBottomColor: '#f0f0f0', borderBottomWidth: 1, marginTop: 25, backgroundColor: '#e0e0e0', padding: 10, margin: 10, borderRadius: 15 }}
 					data={data}
 					renderItem={({ item, index }) =>
 						<Pressable onPress={() => { handlePress(index) }} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginHorizontal: 10 }}>
-							<Image source={item.img} style={styles.image}></Image>
-							<Text style={{ textAlign: 'center', color: '#333' }}>{item.name}</Text>
+							<Image source={item.img} style={[styles.image, { width: 60, height: 60 }]}></Image>
+							{/* <Text style={{ textAlign: 'center', color: '#666' }}>{item.name}</Text> */}
 						</Pressable>}
 				/>
 			</View>
@@ -93,7 +111,6 @@ const styles = StyleSheet.create({
 	image: {
 		width: 130,
 		height: 130,
-		marginBottom: 10,
 		resizeMode: 'contain'
 	},
 	element: {

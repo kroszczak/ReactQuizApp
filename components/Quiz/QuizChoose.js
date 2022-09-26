@@ -30,7 +30,7 @@ export default function QuizChoose({ navigation }) {
 				<View style={styles.textContainer}>
 					<Text style={styles.QuizListItemText}>{item.title}</Text>
 					<Text style={styles.QuizListItemText}>
-						<Icon name="flame-sharp" size={24} color="#f84" />
+						{/* <Icon name="flame-sharp" size={24} color="#f84" /> */}
 					</Text>
 				</View>
 			</Pressable>
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
 		backgroundColor: '#454545',
 		borderBottomEndRadius: 15,
 		borderBottomLeftRadius: 15,
-		height: 100,
+		height: 50,
 		zIndex: 0,
 		padding: 12,
 		justifyContent: 'space-between'
