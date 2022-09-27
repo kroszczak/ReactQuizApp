@@ -31,19 +31,39 @@ data = [
 	},
 	{
 		name: "WOSM",
-		img: require('../img/symbolika/WOSM.png')
+		img: require('../img/symbolika/WOSM.png'),
+		elements: {
+			liljka: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
+			piasek: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.',
+			ramiona: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
+		}
 	},
 	{
 		name: "znaczek zuchowy",
-		img: require('../img/symbolika/znaczek.jpg')
+		img: require('../img/symbolika/znaczek.png'),
+		elements: {
+			liljka: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
+			piasek: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.',
+			ramiona: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
+		}
 	},
 	{
 		name: "naramiennik wędrowniczy",
-		img: require('../img/symbolika/naramiennik.png')
+		img: require('../img/symbolika/naramiennik.jpg'),
+		elements: {
+			liljka: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
+			piasek: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.',
+			ramiona: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
+		}
 	},
 	{
 		name: "elementy munduru",
-		img: require('../img/symbolika/krzyż.png')
+		img: require('../img/symbolika/mundur.jpg'),
+		elements: {
+			liljka: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
+			piasek: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.',
+			ramiona: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
+		}
 	},
 ]
 
