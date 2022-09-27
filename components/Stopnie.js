@@ -40,9 +40,6 @@ const Stopnie = ({ route, navigation }) => {
 			mname: 'wywiadowca',
 			fname: 'tropicielka',
 			icon_size: 25,
-			data: {
-				img: krzyz1
-			}
 		},
 		{
 			icon: ['angle-up'],
@@ -50,9 +47,6 @@ const Stopnie = ({ route, navigation }) => {
 			mname: 'odkrywca',
 			fname: 'pionierka',
 			icon_size: 25,
-			data: {
-				img: krzyz1
-			}
 		},
 		{
 			icon: ['angle-double-up'],
@@ -60,9 +54,6 @@ const Stopnie = ({ route, navigation }) => {
 			mname: 'ćwik',
 			fname: 'samarytanka',
 			icon_size: 25,
-			data: {
-				img: krzyz2
-			}
 		},
 		{
 			icon: ['star'],
@@ -70,9 +61,6 @@ const Stopnie = ({ route, navigation }) => {
 			mname: 'Harcerz Orli',
 			fname: "Hercerka Orla",
 			icon_size: 20,
-			data: {
-				img: krzyz3
-			}
 		},
 		{
 			icon: ['star', 'star'],
@@ -80,9 +68,6 @@ const Stopnie = ({ route, navigation }) => {
 			mname: 'Hercerz RP',
 			fname: 'Hercerka RP',
 			icon_size: 20,
-			data: {
-				img: krzyz4
-			}
 		},
 		{
 			icon: ['star', 'star'],
@@ -90,9 +75,6 @@ const Stopnie = ({ route, navigation }) => {
 			mname: 'gwiazdka zuchowa',
 			fname: '',
 			icon_size: 20,
-			data: {
-				img: krzyz4
-			}
 		},
 		{
 			icon: ['star', 'star'],
@@ -100,9 +82,6 @@ const Stopnie = ({ route, navigation }) => {
 			mname: 'gwiazdka zuchowa',
 			fname: '',
 			icon_size: 20,
-			data: {
-				img: krzyz4
-			}
 		},
 		{
 			icon: ['star', 'star'],
@@ -110,29 +89,20 @@ const Stopnie = ({ route, navigation }) => {
 			mname: 'gwiazdka zuchowa',
 			fname: '',
 			icon_size: 20,
-			data: {
-				img: krzyz4
-			}
 		},
 		{
 			icon: ['star', 'star'],
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'pagon wędrowniczy',
 			fname: '',
-			icon_size: 20,
-			data: {
-				img: krzyz4
-			}
+			icon_size: 20
 		},
 		{
 			icon: ['star', 'star'],
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'próba harcerza',
 			fname: '',
-			icon_size: 20,
-			data: {
-				img: krzyz4
-			}
+			icon_size: 20
 		}]
 
 
@@ -169,7 +139,7 @@ const Stopnie = ({ route, navigation }) => {
 				numColumns={2}
 				data={stopnie}
 				renderItem={({ item, index }) =>
-					<View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', width: '45%', height: 100, marginVertical: '2%', padding: 10, backgroundColor: '#ccc', borderRadius: 5 }}>
+					<Pressable onPress={(e) => { navigation.navigate('Details', { data: e }) }} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', width: '45%', height: 100, marginVertical: '2%', padding: 10, backgroundColor: '#599C38', borderRadius: 5, shadowColor: '#000', shadowOffset: { height: 7, width: 0 }, shadowOpacity: 0.3, shadowRadius: 3.50 }}>
 						<View style={{ flex: 3, display: 'flex', justifyContent: 'flex-end', }}>
 							<Text style={styles.tileText}>{item.mname}</Text>
 							<Text style={styles.tileText}>{item.fname}</Text>
@@ -177,11 +147,16 @@ const Stopnie = ({ route, navigation }) => {
 						<View style={{ flex: 1 }}>
 							<Image source={item.img} style={{ resizeMode: 'contain', width: '100%', height: '100%' }}></Image>
 						</View>
-					</View>}
+					</Pressable>}
 			/>
-		</View >
+		</View>
 	)
 }
+// 96C180
+// 68B541
+// 4B822F
+// 6FC246
+// 599C38
 
 export default StopnieStack
 
@@ -208,14 +183,14 @@ const styles = StyleSheet.create({
 	},
 
 	itemText: {
-		color: '#666',
+		color: '#fff',
 		fontSize: 16,
 		letterSpacing: 2
 	},
 	tileText: {
 		fontWeight: 'bold',
 		fontSize: 16,
-		color: '#333'
+		color: '#fff'
 
 	}
 })

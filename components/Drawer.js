@@ -100,7 +100,7 @@ const MainDrawer = () => {
 						</View>
 				}} /> */}
 
-			<Drawer.Screen
+			{/* <Drawer.Screen
 				name="historia"
 				component={Dummy}
 				options={{
@@ -108,7 +108,7 @@ const MainDrawer = () => {
 						<View style={{ width: '10%', alignItems: 'center' }}>
 							<IconFA5 name="quote-left" size={size} color={focused ? '#7cc' : '#ccc'} />
 						</View>
-				}} />
+				}} /> */}
 
 			<Drawer.Screen
 				name="o nas"

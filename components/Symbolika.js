@@ -108,7 +108,7 @@ const Symbolika = () => {
 					horizontal
 					// pagingEnabled
 					showsHorizontalScrollIndicator={false}
-					style={{ borderBottomColor: '#f0f0f0', borderBottomWidth: 1, marginTop: 25, backgroundColor: '#e0e0e0', padding: 10, margin: 10, borderRadius: 15 }}
+					style={{ borderBottomColor: '#f0f7f0', borderBottomWidth: 1, marginTop: 25, backgroundColor: '#e7e7e7', padding: 10, margin: 10, borderRadius: 15 }}
 					data={data}
 					renderItem={({ item, index }) =>
 						<Pressable onPress={() => { handlePress(index) }} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginHorizontal: 10 }}>

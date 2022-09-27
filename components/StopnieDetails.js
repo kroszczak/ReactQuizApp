@@ -3,11 +3,10 @@ import React from 'react'
 
 const StopnieDetails = ({ route, navigation }) => {
 	const { data } = route.params;
-	console.log(data.data.img)
 	return (
 		<View style={{ flex: 1 }}>
 			<View style={{ flex: 1, backgroundColor: '#333', paddingVertical: 45 }}>
-				<Image source={data.data.img} style={{ width: '100%', height: '100%', resizeMode: 'contain' }} />
+				{/* <Image source={data.data.img} style={{ width: '100%', height: '100%', resizeMode: 'contain' }} /> */}
 			</View>
 			<View style={{ flex: 2 }}>
 				<Text>{data.mname}</Text>
