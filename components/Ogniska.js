@@ -4,12 +4,12 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React, { useRef, useState } from 'react'
 import IconIon from 'react-native-vector-icons/Ionicons'
 import Entypo from 'react-native-vector-icons/Entypo'
-
 import OgniskaDetalis from './OgniskaDetalis';
+import LinearGradient from 'react-native-linear-gradient';
 
 const Tab = createBottomTabNavigator();
 
-data = [
+ogniskaData = [
 	{
 		id: 0,
 		desc: 'ognisko długie',
@@ -79,72 +79,77 @@ data = [
 	},
 ]
 
-const RenderItem = ({ item }) => {
-	const fadeAnim = useRef(new Animated.Value(0)).current;
-	const [opened, setOpened] = useState(false)
+// const RenderItem = ({ item }) => {
+// 	const fadeAnim = useRef(new Animated.Value(0)).current;
+// 	const [opened, setOpened] = useState(false)
+// 	const open = () => {
+// 		Animated.timing(fadeAnim, {
+// 			useNativeDriver: false,
+// 			toValue: 1000,
+// 			duration: 450
+// 		}).start();
+// 	};
 
-	if (fadeAnim._value) console.log('on duty!')
-	const open = () => {
-		Animated.timing(fadeAnim, {
-			useNativeDriver: false,
-			toValue: 1000,
-			duration: 450
-		}).start();
-	};
+// 	const close = () => {
+// 		Animated.timing(fadeAnim, {
+// 			useNativeDriver: false,
+// 			toValue: 0,
+// 			duration: 300
+// 		}).start();
+// 	};
 
-	const close = () => {
-		Animated.timing(fadeAnim, {
-			useNativeDriver: false,
-			toValue: 0,
-			duration: 300
-		}).start();
-	};
+// 	const handlePress = () => {
+// 		setOpened(!opened)
+// 		return opened ? open() : close()
 
-	const handlePress = () => {
-		setOpened(!opened)
-		return opened ? open() : close()
+// 	}
 
-	}
+// 	return (
+// 		<Pressable onPress={() => { handlePress() }} style={{ borderRadius: 5, borderWidth: 1, borderColor: '#e7e7e7', overflow: 'hidden', marginHorizontal: 20, marginVertical: 5 }}>
+// 			<Animated.View style={{
+// 				minHeight: fadeAnim.interpolate({
+// 					inputRange: [0, 1000],
+// 					outputRange: [50, 120]
+// 				}), flexDirection: opened ? 'row' : 'row', alignItems: 'center'
+// 			}}>
 
-	return (
-		<Pressable onPress={() => { handlePress() }} style={{ borderRadius: 15, borderWidth: 1, borderColor: '#ddd', overflow: 'hidden', marginHorizontal: 20, marginVertical: 10 }}>
-			<Animated.View style={{
-				minHeight: fadeAnim.interpolate({
-					inputRange: [0, 1000],
-					outputRange: [50, 120]
-				}), flexDirection: opened ? 'row' : 'row', alignItems: 'center'
-			}}>
+// 				<Animated.Image style={[styles.fireImg, {
+// 					width: fadeAnim.interpolate({
+// 						inputRange: [0, 1000],
+// 						outputRange: ['25%', '49%']
+// 					})
+// 				}]} source={item.img}></Animated.Image>
 
-				<Animated.Image style={[styles.fireImg, {
-					width: fadeAnim.interpolate({
-						inputRange: [0, 1000],
-						outputRange: ['25%', '49%']
-					})
-				}]} source={item.img}></Animated.Image>
+// 				<View style={[styles.textView]}>
+// 					<Text style={styles.fireText}>
+// 						{item.desc}
+// 					</Text>
+// 				</View>
 
-				<View style={[styles.textView]}>
-					<Text style={styles.fireText}>
-						{item.desc}
-					</Text>
-				</View>
+// 			</Animated.View>
 
-			</Animated.View>
-
-			<Animated.View style={[
-				styles.fadingContainer, { maxHeight: fadeAnim, marginHorizontal: 20 }]}>
-				<Text style={{ maxWidth: '100%', position: 'absolute', marginBottom: 10, top: 10, fontSize: 17, lineHeight: 32, color: '#666', fontSize: 17 }}>{item.description}</Text>
-				<Text style={{ maxWidth: '100%', opacity: 0, marginBottom: 10, fontSize: 17, lineHeight: 32 }}>{item.description}</Text>
-			</Animated.View>
-		</Pressable>)
-}
+// 			<Animated.View style={[
+// 				styles.fadingContainer, { maxHeight: fadeAnim, marginHorizontal: 20 }]}>
+// 				<Text style={{ maxWidth: '100%', position: 'absolute', marginBottom: 10, top: 10, fontSize: 17, lineHeight: 32, color: '#666', fontSize: 17 }}>{item.description}</Text>
+// 				<Text style={{ maxWidth: '100%', opacity: 0, marginBottom: 10, fontSize: 17, lineHeight: 32 }}>{item.description}</Text>
+// 			</Animated.View>
+// 		</Pressable>)
+// }
 
 const OgniskaMain = () => {
 	return (
-		<View style={{ flex: 1, backgroundColor: '#fff' }}>
+		<View style={{ flex: 1 }}>
+			<LinearGradient colors={['rgba(255, 255,255, 1)', 'rgba(255, 255,255, 1)', 'rgba(255, 255,255, 1)', 'rgba(255, 255,255, 1)', 'rgba(103, 180, 65, 1)']} style={{ position: 'absolute', flex: 1, width: '100%', height: '100%' }}></LinearGradient>
 			<FlatList
+				columnWrapperStyle={{ justifyContent: 'space-evenly' }}
 				style={{ flex: 1 }}
-				data={data}
-				renderItem={({ item }) => <RenderItem item={item}></RenderItem>}
+				numColumns={2}
+				data={ogniskaData}
+				renderItem={({ item }) =>
+					<View style={{ backgroundColor: '#fff', width: '43%', height: 160, display: 'flex', alignItems: 'center', justifyContent: 'center', borderWidth: 1, marginVertical: 10, borderColor: '#eee', borderRadius: 8, padding: 15, shadowColor: '#000', shadowOffset: { height: 2 }, shadowOpacity: 0.23, shadowRadius: 2, elevation: 6 }}>
+						<Image style={styles.fireImg} source={item.img}></Image>
+						<Text style={{ color: '#333', letterSpacing: 2 }}>{item.desc}</Text>
+					</View>}
 				keyExtractor={item => item.id}
 			/>
 		</View>
@@ -185,9 +190,9 @@ export default Ogniska
 const styles = StyleSheet.create({
 
 	fireImg: {
-		resizeMode: 'contain',
-		marginLeft: 25,
-		height: '80%',
+		width: '100%',
+		flex: 1,
+		resizeMode: 'contain'
 	},
 
 	textView: {
