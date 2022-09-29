@@ -17,62 +17,62 @@ ogniskaData = [
 		img: require('../img/ogniska_dlugo.jpg')
 	},
 	{
-		id: 2,
+		id: 1,
 		desc: 'gwiazda',
 		description: `Przydatne, jeśli zależy nam na oszczędnym zużyciu opału lub na niewielkim ogniu. Ogień pali się pośrodku gwiazdy, stosownie do potrzeb podsuwa się kłody do środka. Wszystkie grubsze patyki układamy promieniście, tak żeby stykały się w centrum. Tam pali się ogień. Gdy płomień staje się zbyt wielki nieco odsuwamy gałęzie na zewnątrz. Gdy przygasa przeciwnie podsuwamy je do centrum, nawet by zachodziły tam jedna na drugą. Przy takim ognisku najlepiej spisuje się opał z twardego drewna drzew liściastych. Można je odciągnąć na bok, jeśli chcemy gotować nad żarem. Ognisko takie jest szczególnie warte polecenia, gdy gotujemy coś podczas wielkich upałów, bo nie wydziela za dużo ciepła.`,
 		img: require('../img/ogniska_gwiazda.jpg')
 	},
 	{
-		id: 3,
+		id: 2,
 		desc: 'klucz',
 		description: `Należy wykopać w ziemi dołek w kształcie dziurki od klucza, odpowiednio usytuowanej względem wiatru.Ognisko to ma podobne zalety jak ognisko długotrwałe.`,
 		img: require('../img/ogniska_klucz.jpg')
 	},
 	{
-		id: 4,
+		id: 3,
 		desc: 'ognisko nocne',
 		description: `Ognisko to umożliwia sen przy ogniu bez niebezpieczeństwa, że płonące kłody stoczą się na śpiącego. Należy położyć dwie duże świeże kłody na ognisku w taki sposób, że będą chronić ciebie i twoje schronienie w miarę, jak ognisko będzie się wypalać. Zwróć uwagę na położenie ściany odbijającej ciepło.`,
 		img: require('../img/ogniska_nocne.jpg')
 	},
 	{
-		id: 5,
+		id: 4,
 		desc: 'pagoda',
 		description: `Pierwsze dwie, trzy warstwy układamy jak przy budowie piramidy. Każde kolejne „piętro" jest układane nie tylko poprzecznie na brzegach (dwa kawałki drewna oparte o poprzednie), ale na całej powierzchni „piętra".`,
 		img: require('../img/ogniska_pagoda.jpg')
 	},
 	{
-		id: 6,
+		id: 5,
 		desc: 'piramida',
 		description: `Budowana jest podobnie jak studnia z tą różnicą, że każde „piętro" układamy z coraz krótszych kłód (pełnych warstw drewna, a nie z ażurowej konstrukcji). Takie ognisko pali się długo i można je wykorzystać jako ogień na całą noc.`,
 		img: require('../img/ogniska_piramida.jpg')
 	},
 	{
-		id: 7,
+		id: 6,
 		desc: 'stoek',
 		description: `O wbity w środek pal opiera się ze wszystkich stron drobniejsze patyki, pamiętając jednak, by od strony nawietrznej zapewnić przestrzeń, przez którą dopływać będzie tlen. Ten typ ogniska zużywa wiele opału, jest jednak doskonały do ogrzewania się i suszenia obuwia oraz odzienia. Uwaga! Ognisko takie, prędzej czy później zawala się (po przepaleniu owego pala)
 `,
 		img: require('../img/ogniska_stozek.jpg')
 	},
 	{
-		id: 8,
+		id: 7,
 		desc: 'studnia',
 		description: `Sam rdzeń stosu pozostaje bez zmian, czyli musi być tam coś, co się zapali (byle nie benzyna, papiery). Natomiast boki układamy z równej długości polan. Zapewnia dużo ciepła i światła dzięki dużemu dopływowi powietrza. Dlatego może ono służyć do gotowania i sygnalizacji. Polana okłada się tak, by tworzyły ażurową konstrukcję, podobną do kraty, która zapewnia dostęp tlenu i wytwarza efekt komina, przez co ogień bucha z wielką werwą.`,
 		img: require('../img/ogniska_studnia.jpg')
 	},
 	{
-		id: 9,
+		id: 8,
 		desc: 'ognisko syberyjskie',
 		description: `Z trzech stron ustawia się dość wysokie i szczelne ścianki z grubszych kłód, zostawiając czwartą stronę otwartą tę, od której będzie wejście do naszego miejsca odpoczynku. Wysokie ściany są po to, aby wiatr nie rozwiewał płomieni i nie zabierał ciepła. Z tyłu stawiamy ścianę z kłód lub mocujemy płachtę osłaniającą od wiatru. Ogień z płonących kłód daje wiele energii cieplnej w jej odmianie promienistej, więc ogrzewa te jedynie strony przedmiotów i ludzi, które do niego zostały skierowane. Spora część owego ciepła leci w przestrzeń na próżno. Aby tę przeciekającą energię pochwycić i dogrzać również te partie naszego ciała, które skierowane są w stronę przeciwną od ogniska`,
 		img: require('../img/ogniska_syberyjskie.jpg')
 	},
 	{
-		id: 10,
+		id: 9,
 		desc: 'ognisko T',
 		description: `Najpierw kopiemy dwa dołki, które połączone przypominają literę T. W dołku będącym górną belką litery T zapalamy ognisko, zaś do części dolnej zbieramy żar, nad którym możemy przypiekać mięsiwo lub postawić garnek, by ogrzać jego zawartość. Ognisko zapalone w dołku jest mniej wrażliwe na silny wiatr. Oczywiście trzeba mieć saperkę, by wykopać dołek w przesuszonej i ubitej ziemi. W sypkim piasku z powodzeniem wystarczą nam do kopania dłonie i nóż, którym wytniemy wpierw dań. Nie ma sensu tworzenie takiego ogniska, gdy jesteśmy w drodze i tylko na chwilę robimy popas. Jest to ognisko dogodne do gotowania. Ogień utrzymuje się w górnej części litery T, skąd pobiera się żar do gotowania w części dolnej.`,
 		img: require('../img/ogniska_T.jpg')
 	},
 	{
-		id: 11,
+		id: 10,
 		desc: 'tratwa',
 		description: `Bardzo użyteczny model do wilgotnego drewna. Pożyteczny również przy mokrym lub zaśnieżonym podłożu. Należy ułożyć na podłożu kadrałowe „łoże" z większych kawałków drewna. Następną warstwę układać poprzecznie. Na wierzchu buduje się piramidę. Wraz ze spaleniem żar przechodzi niżej osuszając i rozpalając dwie zasadnicze warstwy tratwy.`,
 		img: require('../img/ogniska_tratwa.jpg')
@@ -137,8 +137,20 @@ ogniskaData = [
 // }
 
 const OgniskaMain = () => {
+	const [active, setActive] = useState(null)
+	const handlePress = (e) => {
+		setActive(e)
+
+	}
+
 	return (
 		<View style={{ flex: 1 }}>
+			{active != null ?
+				<Pressable onPress={() => { handlePress(null) }} style={{ position: 'absolute', width: '100%', height: '100%', zIndex: 9, backgroundColor: 'rgba(0,0,0,0.5)' }}>
+					<View style={{ position: 'absolute', width: '96%', marginHorizontal: '2%', height: '95%', marginVertical: '5%', backgroundColor: '#f7f7f7', borderRadius: 15, zIndex: 10 }}>
+						<Text>{ogniskaData[active].desc}</Text>
+					</View>
+				</Pressable> : null}
 			<LinearGradient colors={['rgba(255, 255,255, 1)', 'rgba(255, 255,255, 1)', 'rgba(255, 255,255, 1)', 'rgba(255, 255,255, 1)', 'rgba(103, 180, 65, 1)']} style={{ position: 'absolute', flex: 1, width: '100%', height: '100%' }}></LinearGradient>
 			<FlatList
 				columnWrapperStyle={{ justifyContent: 'space-evenly' }}
@@ -146,10 +158,10 @@ const OgniskaMain = () => {
 				numColumns={2}
 				data={ogniskaData}
 				renderItem={({ item }) =>
-					<View style={{ backgroundColor: '#fff', width: '43%', height: 160, display: 'flex', alignItems: 'center', justifyContent: 'center', borderWidth: 1, marginVertical: 10, borderColor: '#eee', borderRadius: 8, padding: 15, shadowColor: '#000', shadowOffset: { height: 2 }, shadowOpacity: 0.23, shadowRadius: 2, elevation: 6 }}>
+					<Pressable onPress={() => { handlePress(item.id) }} style={{ backgroundColor: '#fff', width: '43%', height: 160, display: 'flex', alignItems: 'center', justifyContent: 'center', borderWidth: 1, marginVertical: 10, borderColor: '#eee', borderRadius: 8, padding: 15, shadowColor: '#000', shadowOffset: { height: 2 }, shadowOpacity: 0.23, shadowRadius: 2, elevation: 6 }}>
 						<Image style={styles.fireImg} source={item.img}></Image>
 						<Text style={{ color: '#333', letterSpacing: 2 }}>{item.desc}</Text>
-					</View>}
+					</Pressable>}
 				keyExtractor={item => item.id}
 			/>
 		</View>
