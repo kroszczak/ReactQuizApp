@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, FlatList, Image, Pressable, Animated } from 'react-native'
+import { StyleSheet, Text, View, FlatList, Image, Pressable, Animated, ScrollView } from 'react-native'
 import { NavigationContainer, getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React, { useRef, useState } from 'react'
@@ -6,6 +6,7 @@ import IconIon from 'react-native-vector-icons/Ionicons'
 import Entypo from 'react-native-vector-icons/Entypo'
 import OgniskaDetalis from './OgniskaDetalis';
 import LinearGradient from 'react-native-linear-gradient';
+import Icon from 'react-native-vector-icons/Entypo'
 
 const Tab = createBottomTabNavigator();
 
@@ -146,11 +147,26 @@ const OgniskaMain = () => {
 	return (
 		<View style={{ flex: 1 }}>
 			{active != null ?
-				<Pressable onPress={() => { handlePress(null) }} style={{ position: 'absolute', width: '100%', height: '100%', zIndex: 9, backgroundColor: 'rgba(0,0,0,0.5)' }}>
-					<View style={{ position: 'absolute', width: '96%', marginHorizontal: '2%', height: '95%', marginVertical: '5%', backgroundColor: '#f7f7f7', borderRadius: 15, zIndex: 10 }}>
-						<Text>{ogniskaData[active].desc}</Text>
+				<View style={{ position: 'absolute', width: '100%', height: '100%', zIndex: 9, backgroundColor: 'rgba(0,0,0,0.5)' }}>
+					<View style={{ position: 'static', display: 'flex', width: '96%', marginHorizontal: '2%', height: '95%', marginVertical: '5%', backgroundColor: '#fff', borderRadius: 15, zIndex: 10, alignItems: 'center', justifyContent: 'flex-start' }}>
+						<Pressable onPress={() => handlePress(null)} style={{ position: 'absolute', zIndex: 12, right: 10, top: 10 }}>
+							<Icon name={'cross'} size={32} color={'#666'}></Icon>
+						</Pressable>
+						<View style={{ width: '80%', margin: 20, height: 200, marginBottom: 25 }}>
+							<Image source={ogniskaData[active].img} style={{ resizeMode: 'stretch', width: '100%', height: '100%' }}></Image>
+						</View>
+						<ScrollView
+							contentContainerStyle={{ alignItems: 'center', justifyContent: 'flex-start' }}
+							showsVerticalScrollIndicator={false}
+						>
+							<View style={{ marginBottom: 100, marginHorizontal: 30 }}>
+								<Text style={[styles.elementHeader, { marginBottom: 20 }]}>{ogniskaData[active].desc}</Text>
+								<Text style={styles.elementContent}>{ogniskaData[active].description}</Text>
+							</View>
+
+						</ScrollView>
 					</View>
-				</Pressable> : null}
+				</View> : null}
 			<LinearGradient colors={['rgba(255, 255,255, 1)', 'rgba(255, 255,255, 1)', 'rgba(255, 255,255, 1)', 'rgba(255, 255,255, 1)', 'rgba(103, 180, 65, 1)']} style={{ position: 'absolute', flex: 1, width: '100%', height: '100%' }}></LinearGradient>
 			<FlatList
 				columnWrapperStyle={{ justifyContent: 'space-evenly' }}
@@ -217,5 +233,20 @@ const styles = StyleSheet.create({
 		color: '#505050',
 		letterSpacing: 3,
 		fontSize: 16
+	},
+	elementHeader: {
+		textAlign: 'center',
+		color: '#666',
+		fontSize: 32,
+		fontWeight: '200',
+		letterSpacing: 8,
+		marginBottom: 5
+	},
+	elementContent: {
+		fontWeight: '200',
+		textAlign: 'center',
+		color: '#888',
+		fontSize: 20,
+		lineHeight: 24,
 	}
 })
