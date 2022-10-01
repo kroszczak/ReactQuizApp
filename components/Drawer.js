@@ -120,7 +120,7 @@ const MainDrawer = () => {
 						</View>
 				}} />
 
-			<Drawer.Screen
+			{/* <Drawer.Screen
 				name="ustawienia"
 				component={Settings}
 				options={{
@@ -128,7 +128,7 @@ const MainDrawer = () => {
 						<View style={{ width: '10%', alignItems: 'center' }}>
 							<IconIon name="settings-sharp" size={size} color={focused ? '#7cc' : '#ccc'} />
 						</View>
-				}} />
+				}} /> */}
 
 		</Drawer.Navigator>
 	)

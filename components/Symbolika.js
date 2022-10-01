@@ -108,18 +108,20 @@ const Symbolika = () => {
 					horizontal
 					// pagingEnabled
 					showsHorizontalScrollIndicator={false}
-					style={{ borderBottomColor: '#f0f7f0', borderBottomWidth: 1, marginTop: 25, backgroundColor: '#e7e7e7', padding: 10, margin: 10, borderRadius: 15 }}
+					style={{ borderBottomColor: '#f0f7f0', borderBottomWidth: 1, marginTop: 15, marginHorizontal: 15, backgroundColor: '#e7e7e7', padding: 10, borderRadius: 15 }}
 					data={data}
 					renderItem={({ item, index }) =>
-						<Pressable onPress={() => { handlePress(index) }} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginHorizontal: 10 }}>
+						<Pressable key={index} onPress={() => { handlePress(index) }} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginHorizontal: 10 }}>
 							<Image source={item.img} style={[styles.image, { width: 60, height: 60 }]}></Image>
 							{/* <Text style={{ textAlign: 'center', color: '#666' }}>{item.name}</Text> */}
 						</Pressable>}
 				/>
 			</View>
-			<View style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', flex: 1 }}>
+			<View style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flex: 1 }}>
 				{clicked ? renderContent() :
-					<Text style={{ color: '#666', fontSize: 16 }}> Kliknij element, aby zobaczyć szczegóły</Text>}
+					<View>
+						<Text style={{ color: '#666', fontSize: 16 }}> Kliknij element, aby zobaczyć szczegóły</Text>
+					</View>}
 			</View>
 		</View>
 	)

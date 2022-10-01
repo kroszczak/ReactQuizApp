@@ -22,14 +22,11 @@ const About = () => {
 					Pomysły, zgłoszenia błędów oraz propozycje współpracy: {"\n"}
 					email: harcquiz@mail.pl {"\n"}
 					telefon: 999 999 999{"\n\n"}
-					Twórca Harc-Quiz {"\n"}
+					{"\n"}
 					Pawel Cyngot {"\n"}
 					email@emial.com {"\n"}
 					999 999 999 {"\n\n"}
-					Twórca aplikacji {"\n"}
-					Kacper Roszczak {"\n"}
-					email@emial.com {"\n"}
-					999 999 999</Text>
+				</Text>
 			</View>
 		</View>
 	)
@@ -40,24 +37,31 @@ export default About
 const styles = StyleSheet.create({
 	container: {
 		marginTop: 20,
-		marginHorizontal: 15
+		marginHorizontal: 15,
+		backgroundColor: 'fff'
 	},
 	wrapper: {
 		padding: 15,
-		backgroundColor: '#e7e7e7',
+		backgroundColor: '#eee',
 		borderRadius: 15,
-		marginBottom: 20
+		marginBottom: 20,
+		shadowColor: '#000',
+		shadowOffset: { height: 2 },
+		shadowOpacity: 0.12,
+		shadowRadius: 2.00
 
 	},
 	header: {
-		fontSize: 24,
+		fontSize: 26,
+		letterSpacing: 5,
 		fontWeight: '200',
 		color: '#777',
 		marginBottom: 10
 	},
 	text: {
-		color: '#727272',
+		color: '#888',
 		fontSize: 16,
+		fontWeight: '300',
 		textAlign: 'justify'
 	}
 })

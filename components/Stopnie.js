@@ -26,83 +26,103 @@ const Stopnie = ({ route, navigation }) => {
 	stopnie = [
 		{
 			icon: ['minus'],
+			color: '#4B822F',
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'młodzik',
 			fname: 'ochotniczka',
 			icon_size: 25,
-			data: {
-				img: null
-			}
+			content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
+
 		},
 		{
 			icon: ['equals'],
+			color: '#4B822F',
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'wywiadowca',
 			fname: 'tropicielka',
 			icon_size: 25,
+			content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
 		},
 		{
 			icon: ['angle-up'],
+			color: '#599C38',
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'odkrywca',
 			fname: 'pionierka',
 			icon_size: 25,
+			content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
 		},
 		{
 			icon: ['angle-double-up'],
+			color: '#599C38',
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'ćwik',
 			fname: 'samarytanka',
 			icon_size: 25,
+			content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
 		},
 		{
 			icon: ['star'],
+			color: '#6FC246',
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'Harcerz Orli',
 			fname: "Hercerka Orla",
 			icon_size: 20,
+			content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
 		},
 		{
 			icon: ['star', 'star'],
+			color: '#6FC246',
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'Hercerz RP',
 			fname: 'Hercerka RP',
 			icon_size: 20,
+			content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
 		},
 		{
 			icon: ['star', 'star'],
+			color: '#96C180',
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'gwiazdka zuchowa',
 			fname: '',
 			icon_size: 20,
+			content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
 		},
 		{
 			icon: ['star', 'star'],
+			color: '#96C180',
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'gwiazdka zuchowa',
 			fname: '',
 			icon_size: 20,
+			content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
 		},
 		{
 			icon: ['star', 'star'],
+			color: '#599C38',
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'gwiazdka zuchowa',
 			fname: '',
 			icon_size: 20,
+			content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
 		},
 		{
 			icon: ['star', 'star'],
+			color: '#599C38',
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'pagon wędrowniczy',
 			fname: '',
-			icon_size: 20
+			icon_size: 20,
+			content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
 		},
 		{
 			icon: ['star', 'star'],
+			color: '#599C38',
 			img: require('../img/symbolika/krzyż.png'),
 			mname: 'próba harcerza',
 			fname: '',
-			icon_size: 20
+			icon_size: 20,
+			content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
 		}]
 
 
@@ -139,7 +159,7 @@ const Stopnie = ({ route, navigation }) => {
 				numColumns={2}
 				data={stopnie}
 				renderItem={({ item, index }) =>
-					<Pressable onPress={(e) => { navigation.navigate('Details', { data: e }) }} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', width: '45%', height: 100, marginVertical: '2%', padding: 10, backgroundColor: '#599C38', borderRadius: 5, shadowColor: '#000', shadowOffset: { height: 7, width: 0 }, shadowOpacity: 0.3, shadowRadius: 3.50 }}>
+					<Pressable onPress={(e) => { navigation.navigate('Details', { data: item }) }} style={[{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', width: '45%', height: 100, marginVertical: '2%', padding: 10, borderRadius: 5, shadowColor: '#000', shadowOffset: { height: 7, width: 0 }, shadowOpacity: 0.3, shadowRadius: 3.50 }, { backgroundColor: item.color }]}>
 						<View style={{ flex: 3, display: 'flex', justifyContent: 'flex-end', }}>
 							<Text style={styles.tileText}>{item.mname}</Text>
 							<Text style={styles.tileText}>{item.fname}</Text>
