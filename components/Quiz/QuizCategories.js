@@ -5,7 +5,7 @@ import QuizChoose from './QuizChoose'
 
 
 
-    
+
 
 
 
@@ -22,7 +22,7 @@ const QuizCategories = () => {
     if (!activeCategoryList) {
         return (
             <View style={styles.container}>
-                
+
                 <View style={styles.row_container}>
                     <Pressable onPress={() => getListItems('wiedza harcerska')} style={styles.item}>
                         <Text style={styles.itemText}>wiedza harcerska</Text>
@@ -49,17 +49,16 @@ const QuizCategories = () => {
                         <Text style={styles.itemText}>inne</Text>
                     </Pressable>
                 </View>
-                
+
 
 
 
             </View>
         )
     }
-    else
-    {
+    else {
         return (
-                <QuizChoose data={activeCategoryList} categoryReset={reset}></QuizChoose>
+            <QuizChoose data={activeCategoryList} categoryReset={reset}></QuizChoose>
         )
     }
 }
@@ -81,16 +80,16 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
 
     },
-    
-  item: {
-      height: '100%',
-      flex: 1,
-      alignItems: 'center',
-      justifyContent: 'center'
-  },
-  
-  itemText: {
-      fontSize: 18,
-      color: '#333'
-  }
+
+    item: {
+        height: '100%',
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+
+    itemText: {
+        fontSize: 18,
+        color: '#333'
+    }
 })
