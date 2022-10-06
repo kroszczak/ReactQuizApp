@@ -25,9 +25,9 @@ const Stopnie = ({ route, navigation }) => {
 
     stopnie = [
         {
-            icon: ['minus'],
-            color: '#4B822F',
-            img: require('../img/symbolika/krzyż.png'),
+            icon: 'minus',
+            color: '#96C180',
+            img: require('../img/krzyze/krzyż.png'),
             mname: 'młodzik',
             fname: 'ochotniczka',
             icon_size: 25,
@@ -35,53 +35,62 @@ const Stopnie = ({ route, navigation }) => {
 
         },
         {
-            icon: ['equals'],
-            color: '#4B822F',
-            img: require('../img/symbolika/krzyż.png'),
+            icon: 'equals',
+            color: '#96C180',
+            img: require('../img/krzyze/krzyz_1.png'),
             mname: 'wywiadowca',
             fname: 'tropicielka',
             icon_size: 25,
             content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
         },
         {
-            icon: ['angle-up'],
+            icon: 'angle-up',
             color: '#599C38',
-            img: require('../img/symbolika/krzyż.png'),
+            img: require('../img/krzyze/krzyz_2.png'),
             mname: 'odkrywca',
             fname: 'pionierka',
             icon_size: 25,
             content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
         },
         {
-            icon: ['angle-double-up'],
+            icon: 'angle-double-up',
             color: '#599C38',
-            img: require('../img/symbolika/krzyż.png'),
+            img: require('../img/krzyze/krzyz_2.png'),
             mname: 'ćwik',
             fname: 'samarytanka',
             icon_size: 25,
             content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
         },
         {
-            icon: ['star'],
-            color: '#6FC246',
-            img: require('../img/symbolika/krzyż.png'),
+            icon: 'star',
+            color: '#4B822F',
+            img: require('../img/krzyze/krzyz_3.png'),
             mname: 'Harcerz Orli',
             fname: "Hercerka Orla",
             icon_size: 20,
             content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
         },
         {
-            icon: ['star', 'star'],
-            color: '#6FC246',
-            img: require('../img/symbolika/krzyż.png'),
+            icon: 'star',
+            color: '#4B822F',
+            img: require('../img/krzyze/krzyz_4.png'),
             mname: 'Hercerz RP',
             fname: 'Hercerka RP',
             icon_size: 20,
             content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
         },
         {
-            icon: ['star', 'star'],
-            color: '#96C180',
+            icon: 'star',
+            color: '#6FC246',
+            img: require('../img/krzyze/krzyz_1.png'),
+            mname: 'gwiazdka zuchowa',
+            fname: '',
+            icon_size: 20,
+            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
+        },
+        {
+            icon: 'star',
+            color: '#6FC246',
             img: require('../img/symbolika/krzyż.png'),
             mname: 'gwiazdka zuchowa',
             fname: '',
@@ -89,8 +98,8 @@ const Stopnie = ({ route, navigation }) => {
             content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
         },
         {
-            icon: ['star', 'star'],
-            color: '#96C180',
+            icon: 'star',
+            color: '#6FC246',
             img: require('../img/symbolika/krzyż.png'),
             mname: 'gwiazdka zuchowa',
             fname: '',
@@ -98,16 +107,7 @@ const Stopnie = ({ route, navigation }) => {
             content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
         },
         {
-            icon: ['star', 'star'],
-            color: '#599C38',
-            img: require('../img/symbolika/krzyż.png'),
-            mname: 'gwiazdka zuchowa',
-            fname: '',
-            icon_size: 20,
-            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
-        },
-        {
-            icon: ['star', 'star'],
+            icon: 'star',
             color: '#599C38',
             img: require('../img/symbolika/krzyż.png'),
             mname: 'pagon wędrowniczy',
@@ -116,7 +116,7 @@ const Stopnie = ({ route, navigation }) => {
             content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fuga et voluptatum, dolorum commodi vero ipsa aspernatur odio, accusantium, pariatur ullam culpa illum doloribus. Neque hic aliquid optio quas ut.'
         },
         {
-            icon: ['star', 'star'],
+            icon: 'star',
             color: '#599C38',
             img: require('../img/symbolika/krzyż.png'),
             mname: 'próba harcerza',
@@ -159,13 +159,14 @@ const Stopnie = ({ route, navigation }) => {
                 numColumns={2}
                 data={stopnie}
                 renderItem={({ item, index }) =>
-                    <Pressable onPress={(e) => { navigation.navigate('Details', { data: item }) }} style={[{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', width: '45%', height: 100, marginVertical: '2%', padding: 10, borderRadius: 5, shadowColor: '#000', shadowOffset: { height: 7, width: 0 }, shadowOpacity: 0.3, shadowRadius: 3.50 }, { backgroundColor: item.color }]}>
+                    <Pressable onPress={(e) => { navigation.navigate('Details', { data: item }) }} style={[{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', width: '45%', height: 100, marginVertical: '2%', padding: 10, borderRadius: 10, borderWidth: 3, borderColor: '#555', shadowColor: '#000', shadowOffset: { height: 2, width: 0 }, shadowOpacity: 0.3, shadowRadius: 1.50, backgroundColor: '#fff' }]}>
                         <View style={{ flex: 3, display: 'flex', justifyContent: 'flex-end', }}>
                             <Text style={styles.tileText}>{item.mname}</Text>
                             <Text style={styles.tileText}>{item.fname}</Text>
                         </View>
-                        <View style={{ flex: 1 }}>
-                            <Image source={item.img} style={{ resizeMode: 'contain', width: '100%', height: '100%' }}></Image>
+                        <View style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <Icon name={item.icon} color="#555" size={30}></Icon>
+                            {/* <Image source={item.img} style={{ resizeMode: 'contain', width: '100%', height: '100%' }}></Image> */}
                         </View>
                     </Pressable>}
             />
@@ -210,7 +211,7 @@ const styles = StyleSheet.create({
     tileText: {
         fontWeight: 'bold',
         fontSize: 16,
-        color: '#fff'
+        color: '#555'
 
     }
 })

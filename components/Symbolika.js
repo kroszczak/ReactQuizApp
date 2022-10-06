@@ -6,34 +6,43 @@ data = [
         name: "krzyż harcerski",
         img: require('../img/symbolika/krzyż.png'),
         elements: {
-            liljka: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
-            piasek: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.',
-            ramiona: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
+            okrąg: 'Symbol doskonałości',
+            promienie: 'Obejmowanie wpływem harcerstwa jak najszerszego grona ludzi',
+            "wieniec dębu": 'Symbol męstwa',
+            "wieniec laurowy": 'Symbol zwycięstwa',
+            Czuwaj: 'Wezwanie do czujności oraz gotowości pełnienia słuby',
+            "ziarenka piasku": 'Oznaczają niezliczoną ilość harcerzy',
+            "puste miejsca między ziarenkami": 'miejsce na nowych harcerzy',
+            "dwie gwiazdki": 'Prawo i Przyrzeczenie',
+            "trzy żołędzie": 'trzy rozbiory polski',
+            "dwie oliwki": 'dwie wojny światowe',
+            "ramiona krzyża": 'cztery strony świata'
         }
     },
     {
         name: "lilijka harcerska",
         img: require('../img/symbolika/lilijka.png'),
         elements: {
-            liljka: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
+            ONC: 'Ojczyna, Nauka, Cnota',
+            ramiona: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
             piasek: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.',
-            ramiona: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
+            opis: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
         }
     },
     {
         name: "Koniczynka WAGGGS",
         img: require('../img/symbolika/koniczynka.png'),
         elements: {
-            liljka: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
-            piasek: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.',
-            ramiona: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
+            "dwie gwiazdki": 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
+            "igła kompasu": 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.',
+            "łodyga": 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
         }
     },
     {
         name: "WOSM",
         img: require('../img/symbolika/WOSM.png'),
         elements: {
-            liljka: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
+            "dwie gwiazdki": 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur. nic',
             piasek: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.',
             ramiona: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eum recusandae possimus corporis praesentium reprehenderit vitae ratione ducimus exercitationem ipsa enim eius rerum tempore explicabo dicta facere doloribus, minus consectetur.3',
         }

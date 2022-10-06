@@ -6,7 +6,7 @@ const StopnieDetails = ({ route, navigation }) => {
     console.log(data)
     return (
         <View style={{ flex: 1, backgroundColor: '#fff' }}>
-            <View style={{ flex: 1, paddingVertical: 45 }}>
+            <View style={{ flex: 1, paddingVertical: 45, backgroundColor: '#333' }}>
                 <Image source={data.img} style={{ width: '100%', height: '100%', resizeMode: 'contain' }} />
             </View>
             <View style={{ flex: 2, width: '90%', marginHorizontal: '5%' }}>
